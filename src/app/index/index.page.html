@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true">
+  <div class="main-content">
+    <div class="hero-section">
+      <div class="avatar-container">
+        <div class="avatar"></div>
+      </div>
+      <h1>I am <span class="highlight">Rohin, Information System Security Student</span> Here's a showcase of my projects and abilities.</h1>
+    </div>
+    <div class="content-wrapper">
+      <div class="content-section">
+        <h2>About</h2>
+        <p>Cyber Security Expert</p>
+        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna.</p>
+        <a href="https://github.com/Roheen-01" class="button">Learn More</a>
+      </div>
+
+      <div class="recent-work">
+        <h2>Recent Work</h2>
+        <div class="work-container">
+          <div class="work-item" *ngFor="let project of projects">
+            <img [src]="project.imageUrl" alt="{{ project.title }}">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <a [href]="project.repoUrl" class="button" target="_blank">View Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-section-info">
+        <h2>Get in Touch</h2>
+        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor</p>
+        <div class="contact-form">
+          <input type="text" placeholder="Name (Pending)" disabled>
+          <input type="email" placeholder="Email (Pending)" disabled>
+          <textarea placeholder="Message (Pending)" disabled></textarea>
+        </div>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><ion-icon class="ion-icon" name="location"></ion-icon>1234 Somewhere Rd.</p>
+          <p><ion-icon class="ion-icon" name="call"></ion-icon>000-000-0000</p>
+          <p><ion-icon class="ion-icon" name="mail"></ion-icon>hello&#64;website.tld</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
